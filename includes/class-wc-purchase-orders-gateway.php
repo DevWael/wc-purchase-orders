@@ -53,7 +53,7 @@ class Wc_Purchase_Orders_Gateway extends WC_Payment_Gateway {
 	public function payment_fields() {
 		parent::payment_fields();
 		do_action( 'wcpo_before_form' );
-		echo '<fieldset id="wc-' . esc_attr( $this->id ) . '-po-form" class="wc-payment-process-form wc-payment-form" style="background:transparent;">';
+		echo '<fieldset id="wc-' . esc_attr( $this->id ) . '-po-form" class="wcpo-payment-process-form wc-payment-form" style="background:transparent;">';
 		$purchase_order_doc    = __( 'Upload purchase order document file', 'wc-purchase-orders' );
 		$purchase_order_number = __( 'Add purchase order number (optional)', 'wc-purchase-orders' );
 		echo '<div class="form-row form-row-wide wcpo-document-upload">
@@ -62,8 +62,8 @@ class Wc_Purchase_Orders_Gateway extends WC_Payment_Gateway {
 		<input type="hidden" name="wcpo-document-file-path">
 		<div class="clear"></div>
 		</div>
-		<div class="form-row form-row-wide">
-		<div class="wcpo-document-preview"></div>
+		<div class="form-row-wide">
+		<div class="wcpo-document-preview form-row-wide"></div>
 		</div>
 		<div class="form-row form-row-wide"><label>' . $purchase_order_number . '</label>
 		<input id="wcpo-document-number" name="wcpo-document-number" type="text">

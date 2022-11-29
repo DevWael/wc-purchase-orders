@@ -1,4 +1,3 @@
-
 .wcpo-document-upload {
 
 }
@@ -16,6 +15,19 @@
     border: 3px dashed #cacaca;
     border-radius: 7px;
     display: none;
+}
+
+.wcpo-document-preview img{
+    max-width: 30px !important;
+    float: right;
+}
+
+.wcpo-payment-process-form{
+    border: none;
+}
+
+.wcpo-payment-process-form .form-row-wide{
+    margin-bottom: 10px;
 }
 
 .wcpo-remove {

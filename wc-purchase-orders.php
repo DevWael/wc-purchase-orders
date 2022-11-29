@@ -13,7 +13,7 @@
  * @package           Wc_Purchase_Orders
  *
  * @wordpress-plugin
- * Plugin Name:       WC Shop Orders
+ * Plugin Name:       WC Purchase Orders
  * Plugin URI:        https://deedy.uk
  * Description:       Support shop orders as a WooCommerce payment gateway and show this payment gateway to allowed users only.
  * Version:           1.0.0
